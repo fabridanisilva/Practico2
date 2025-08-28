@@ -33,7 +33,7 @@ public class OrniVerde extends Castor implements Pata{
     public void tocarGuitorgan(){
         super.tocarGuitarra();
         tocarOrgano();
-        
+        System.out.println("cuac cuac...!");
     
     }
     
