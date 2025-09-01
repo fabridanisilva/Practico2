@@ -19,11 +19,14 @@ public class Castor {
         this.velocidad = velocidad;
     }
     
-        public void tocarGuitarra(){
-            Random random = new Random();
-            int num = 1 + random.nextInt(6 - 1 + 1);
-            System.out.println("toca cuerda " + num);
+    public void tocarGuitarra(){
+        Random random = new Random();
+        System.out.println("Tocando la guitarra:");
+        for (int i = 0; i < 3; i++){
+            int cuerda = random.nextInt(6)+ 1;
+            System.out.println("Toca cuerda" + cuerda);
         }
+    }
         
         public void nadar(){
         
