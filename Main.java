@@ -12,12 +12,15 @@ import java.util.Scanner;
  */
 public class Main {
     public static void main(String[] args) {
+        
         Scanner scanner = new Scanner(System.in);
         
         System.out.println("cual es la longitud de cola del castor: ");
+        
         double cola = scanner.nextDouble();
         
         System.out.println("ingrese la velocidad del castor: ");
+        
         double velocidad = scanner.nextDouble();
         
         Castor castor = new Castor(cola,velocidad);
@@ -25,12 +28,39 @@ public class Main {
         OrniVerde verdi = new OrniVerde(cola,velocidad);
         
         System.out.println("ingrese la propulsion de blue: ");
+        
         double propulcionBlue = scanner.nextDouble();
+        
         OrniAzul blue = new OrniAzul(propulcionBlue,cola,velocidad);
+        
         System.out.println("ingrese la propulsion de blui: ");
+        
         double propuBlui = scanner.nextDouble();
+        
         OrniAzul blui = new OrniAzul(propuBlui,cola,velocidad);
         
+        
+        /*
+        Castor [] hermanos = new Castor [3];
+        
+        try{
+            
+            hermanos [1] = verdi;
+            
+            hermanos [0] = blue;
+            
+            hermanos [2] = blui;
+            
+            
+        } catch (ArrayIndexOutOfBoundsException e){
+            
+            System.out.println("Error");
+            
+        } finally {
+            
+            System.out.println("Los ornitisHermanos juntos al Fin");
+        }
+        */
         verdi.tocarOrgano();
         verdi.tocarGuitorgan();
         
